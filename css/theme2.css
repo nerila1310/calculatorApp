@@ -1,0 +1,47 @@
+*{
+    color: hsl(198, 20%, 13%);
+}
+
+body, .upper-section{
+    background-color:  hsl(0, 0%, 90%);
+}
+
+.theme-toggle {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.custom-radio-button .checkmark {
+    background-color: hsl(25, 98%, 40%);
+}
+
+
+.lower-section{
+    background-color: hsl(0, 5%, 81%);
+}
+
+.display{
+    background-color: hsl(0, 0%, 93%);
+}
+
+button{
+    background-color:  hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0px 4px 0px 0px  hsl(28, 16%, 65%);
+}
+
+button:active{
+    background-color: hsl(180, 39%, 25%);
+    box-shadow: 0px 4px 0px 0px  hsl(180, 39%, 25%);
+    color: rgb(255, 255, 255);
+}
+.color-equal{
+    color: rgb(255, 255, 255);
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 4px 0px 0px  hsl(25, 99%, 27%);
+}
+
+.color-reset{
+    color: rgb(255, 255, 255);
+    background-color: hsl(180, 38%, 37%);
+    box-shadow: 0px 4px 0px 0px  hsl(180, 39%, 26%);
+}

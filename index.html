@@ -10,7 +10,8 @@
 
 	<title>Frontend Mentor | Calculator app</title>
 
-	<link rel="stylesheet" href="css/theme1.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link id="theme" rel="stylesheet" href="css/theme1.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
@@ -45,15 +46,15 @@
 					<div style="font-size: 16px; margin-right: 5px;">THEME</div>
 					<div class="theme-toggle">
 						<label class="custom-radio-button">
-							<input id="first" name="toggle-state" type="radio" checked />
+							<input id="first" name="toggle-state" type="radio" checked value="theme1" />
 							<span class="checkmark"></span>
 						</label>
 						<label class="custom-radio-button">
-							<input id="second" name="toggle-state" type="radio" />
+							<input id="second" name="toggle-state" type="radio" value="theme2" />
 							<span class="checkmark"></span>
 						</label>
 						<label class="custom-radio-button">
-							<input id="third" name="toggle-state" type="radio" />
+							<input id="third" name="toggle-state" type="radio" value="theme3" />
 							<span class="checkmark"></span>
 						</label>
 					</div>
@@ -69,7 +70,7 @@
 			<button class="number">7</button>
 			<button class="number">8</button>
 			<button class="number">9</button>
-			<button class="color-blue text-small" onclick="screen.deleteNumber()">DEL</button>
+			<button class="color-reset text-small" onclick="screen.deleteNumber()">DEL</button>
 			<button class="number">4</button>
 			<button class="number">5</button>
 			<button class="number">6</button>
@@ -82,8 +83,8 @@
 			<button class="number">0</button>
 			<button class="operator" value="divide">/</button>
 			<button class="operator" value="multiply">x</button>
-			<button class="col-2 color-blue text-small" onclick="screen.deleteDisplay()">RESET</button>
-			<button class="col-2 operator color-red text-small" value="equal">=</button>
+			<button class="col-2 color-reset text-small" onclick="screen.deleteDisplay()">RESET</button>
+			<button class="col-2 operator color-equal text-small" value="equal">=</button>
 		</div>
 		<div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

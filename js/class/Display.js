@@ -43,7 +43,7 @@ class Display {
         const previousValue = parseFloat(this.previousValue);
         
         if(isNaN(currentValue) || isNaN(previousValue)) return;
-        this.currentValue = this.calculator[this.typeOperacion](previousValue, currentValue).toFixed(4);
+        this.currentValue = this.calculator[this.typeOperacion](previousValue, currentValue);
     }
     
     //* validate operation

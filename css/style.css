@@ -1,0 +1,174 @@
+/** global styles */
+*{
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+/** main container */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+/** upper section */
+.upper-section{
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: 60px 150px;
+} 
+
+/** lower-section */
+.lower-section{
+    display: grid;
+    grid-template-columns: repeat(4, 85px);
+    grid-template-rows: repeat(5, 80px);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/** Responsive design */
+@media (min-width: 401px) {
+    .upper-section{
+        grid-template-columns: 630px;
+        grid-template-rows: 60px 150px;
+    } 
+
+    .lower-section{
+        grid-template-columns: repeat(4, 150px);
+        grid-template-rows: repeat(5, 90px);
+        padding: 15px;
+    }
+}
+
+/** Display */
+.display{
+    grid-column: 1/-1;
+    padding: 16px;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-between;
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+@media (min-width: 401px) {
+    .current-value{
+        font-size: 2.7em;
+    }
+    
+    #previous-value{
+        font-size: 3em;
+    }
+}
+
+.current-value{
+    font-size: 2.3em;
+}
+
+#previous-value{
+    font-size: 2.5em;
+}
+
+/** title and theme section */
+.theme-section{
+    grid-column: 1/-1;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/** theme selector */
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 12px;
+}
+
+.custom-radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-radio-button input {
+    display: none;
+}
+
+.custom-radio-button .checkmark {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.custom-radio-button input:checked + .checkmark {
+    opacity: 1;
+    display: inline-block;
+}
+
+.label-numbers{
+    position: relative;
+    bottom: 22px;
+    left: 114px;
+}
+
+.label-numbers label{
+    margin: 4px;
+    font-size: 1.1em;
+}
+
+@media (min-width: 401px) {
+    .label-numbers{
+        left: 119px;
+    }
+    
+    .label-numbers label{
+        font-size: 1.5em;
+    }
+}
+
+/** Buttons */
+button{
+    cursor: pointer;
+    margin: 8px;
+    padding: 0;
+    font-size: 2em;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (min-width: 401px) {
+    button{
+        margin: 10px;
+    }
+}
+
+button:focus{
+    outline: none;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.text-small{
+    font-size: 1.4em;
+}
