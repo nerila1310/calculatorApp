@@ -33,8 +33,8 @@
 
 	<div class="container">
 
-		<div class="sup">
-			<div class="theme">
+		<div class="upper-section">
+			<div class="theme-section">
 				<div class="current-value">calc</div>
 				<div style="display: flex; align-items: flex-end;">
 					<div class="label-numbers">
@@ -48,61 +48,48 @@
 							<input id="first" name="toggle-state" type="radio" checked />
 							<span class="checkmark"></span>
 						</label>
-
 						<label class="custom-radio-button">
 							<input id="second" name="toggle-state" type="radio" />
 							<span class="checkmark"></span>
 						</label>
-
 						<label class="custom-radio-button">
 							<input id="third" name="toggle-state" type="radio" />
 							<span class="checkmark"></span>
 						</label>
 					</div>
-
-					
-
 				</div>
 			</div>
-
 			<div class="display">
 				<div id="previous-value"></div>
 				<div class="current-value" id="current-value"></div>
 			</div>
 		</div>
-
-		<div class="inf">
+		
+		<div class="lower-section">
 			<button class="number">7</button>
 			<button class="number">8</button>
 			<button class="number">9</button>
 			<button class="color-blue text-small" onclick="screen.deleteNumber()">DEL</button>
-
 			<button class="number">4</button>
 			<button class="number">5</button>
 			<button class="number">6</button>
 			<button class="operator" value="add">+</button>
-
 			<button class="number">1</button>
 			<button class="number">2</button>
 			<button class="number">3</button>
 			<button class="operator" value="subtract">-</button>
-
 			<button class="number">.</button>
 			<button class="number">0</button>
 			<button class="operator" value="divide">/</button>
 			<button class="operator" value="multiply">x</button>
-
 			<button class="col-2 color-blue text-small" onclick="screen.deleteDisplay()">RESET</button>
 			<button class="col-2 operator color-red text-small" value="equal">=</button>
 		</div>
-
 		<div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
 			Coded by <a href="#">Neri Laredo De La Paz</a>.
 		</div>
-
 	</div>
-
 	<script src="js/app.js" type="module"></script>
 </body>
 

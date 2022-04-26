@@ -1,3 +1,4 @@
+/** global styles */
 *{
     font-family: 'League Spartan', sans-serif;
     color: #fff;
@@ -8,7 +9,7 @@ body{
     background-color: hsl(222, 26%, 31%);
 }
 
-/* Contenedor principal */
+/** main container */
 .container{
     display: flex;
     flex-direction: column;
@@ -17,16 +18,16 @@ body{
     height: 100vh
 }
 
-/* Parte superior de la calculadora */
-.sup{
+/** upper section */
+.upper-section{
     display: grid;
     grid-template-columns: 360px;
     grid-template-rows: 60px 150px;
     background-color: hsl(222, 26%, 31%);
 } 
 
-/* Parte inferior de la calculadora */
-.inf{
+/** lower-section */
+.lower-section{
     display: grid;
     grid-template-columns: repeat(4, 85px);
     grid-template-rows: repeat(5, 80px);
@@ -35,16 +36,14 @@ body{
     padding: 10px;
 }
 
-
-@media (min-width: 400px) {
-    /* Parte superior de la calculadora */
-    .sup{
+/** Responsive design */
+@media (min-width: 401px) {
+    .upper-section{
         grid-template-columns: 630px;
         grid-template-rows: 60px 150px;
     } 
 
-    /* Parte inferior de la calculadora */
-    .inf{
+    .lower-section{
         grid-template-columns: repeat(4, 150px);
         grid-template-rows: repeat(5, 90px);
         background-color: hsl(223, 31%, 20%);
@@ -53,6 +52,7 @@ body{
     }
 }
 
+/** Display */
 .display{
     grid-column: 1/-1;
     padding: 16px;
@@ -67,7 +67,26 @@ body{
     word-break: break-all;
 }
 
-.theme{
+@media (min-width: 401px) {
+    .current-value{
+        font-size: 2.7em;
+    }
+    
+    #previous-value{
+        font-size: 3em;
+    }
+}
+
+.current-value{
+    font-size: 2.3em;
+}
+
+#previous-value{
+    font-size: 2.5em;
+}
+
+/** title and theme section */
+.theme-section{
     grid-column: 1/-1;
     padding: 16px;
     display: flex;
@@ -76,8 +95,7 @@ body{
     align-items: flex-end;
 }
 
-/* Selector de tema */
-
+/** theme selector */
 .theme-toggle {
     display: flex;
     justify-content: center;
@@ -125,7 +143,7 @@ body{
     font-size: 1.1em;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 401px) {
     .label-numbers{
         left: 119px;
     }
@@ -135,6 +153,7 @@ body{
     }
 }
 
+/** Buttons */
 button{
     cursor: pointer;
     margin: 8px;
@@ -148,7 +167,7 @@ button{
     box-shadow: 0px 4px 0px 0px  hsl(28, 16%, 65%);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 401px) {
     button{
         margin: 10px;
     }
@@ -164,28 +183,6 @@ button:focus{
     outline: none;
 }
 
-.col-2{
-    grid-column: span 2;
-}
-
-@media (min-width: 400px) {
-    .current-value{
-        font-size: 2.7em;
-    }
-    
-    #previous-value{
-        font-size: 3em;
-    }
-}
-
-.current-value{
-    font-size: 2.3em;
-}
-
-#previous-value{
-    font-size: 2.5em;
-}
-
 .color-red{
     color: rgb(255, 255, 255);
     background-color: hsl(6, 63%, 50%);
@@ -196,6 +193,10 @@ button:focus{
     color: rgb(255, 255, 255);
     background-color: hsl(225, 21%, 49%);
     box-shadow: 0px 4px 0px 0px  hsl(224, 28%, 35%);
+}
+
+.col-2{
+    grid-column: span 2;
 }
 
 .text-small{
