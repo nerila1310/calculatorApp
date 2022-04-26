@@ -24,7 +24,7 @@
 		}
 
 		.attribution a {
-			color: hsl(228, 45%, 44%);
+			color: hsl(5, 39%, 72%);
 		}
 	</style>
 </head>
@@ -35,9 +35,9 @@
 
 		<div class="sup">
 			<div class="theme">
-				<div class="valor-actual">calc</div>
+				<div class="current-value">calc</div>
 				<div style="display: flex; align-items: flex-end;">
-					<div class="label-numeros">
+					<div class="label-numbers">
 						<label>1</label>
 						<label>2</label>
 						<label>3</label>
@@ -66,34 +66,34 @@
 			</div>
 
 			<div class="display">
-				<div id="valor-anterior">849 * </div>
-				<div class="valor-actual" id="valor-actual">96</div>
+				<div id="previous-value"></div>
+				<div class="current-value" id="current-value"></div>
 			</div>
 		</div>
 
 		<div class="inf">
-			<button class="numero">7</button>
-			<button class="numero">8</button>
-			<button class="numero">9</button>
-			<button class="color-blue text-small" onclick="screen.borrarNumero()">DEL</button>
+			<button class="number">7</button>
+			<button class="number">8</button>
+			<button class="number">9</button>
+			<button class="color-blue text-small" onclick="screen.deleteNumber()">DEL</button>
 
-			<button class="numero">4</button>
-			<button class="numero">5</button>
-			<button class="numero">6</button>
-			<button class="operador" value="sumar">+</button>
+			<button class="number">4</button>
+			<button class="number">5</button>
+			<button class="number">6</button>
+			<button class="operator" value="add">+</button>
 
-			<button class="numero">1</button>
-			<button class="numero">2</button>
-			<button class="numero">3</button>
-			<button class="operador" value="restar">-</button>
+			<button class="number">1</button>
+			<button class="number">2</button>
+			<button class="number">3</button>
+			<button class="operator" value="subtract">-</button>
 
-			<button class="numero">.</button>
-			<button class="numero">0</button>
-			<button class="operador" value="dividir">/</button>
-			<button class="operador" value="multiplicar">x</button>
+			<button class="number">.</button>
+			<button class="number">0</button>
+			<button class="operator" value="divide">/</button>
+			<button class="operator" value="multiply">x</button>
 
-			<button class="col-2 color-blue text-small" onclick="screen.borrarDisplay()">RESET</button>
-			<button class="col-2 operador color-red text-small" value="igual">=</button>
+			<button class="col-2 color-blue text-small" onclick="screen.deleteDisplay()">RESET</button>
+			<button class="col-2 operator color-red text-small" value="equal">=</button>
 		</div>
 
 		<div class="attribution">
@@ -103,6 +103,7 @@
 
 	</div>
 
+	<script src="js/app.js" type="module"></script>
 </body>
 
 </html>

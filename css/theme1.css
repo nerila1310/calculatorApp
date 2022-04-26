@@ -114,23 +114,23 @@ body{
     display: inline-block;
 }
 
-.label-numeros{
+.label-numbers{
     position: relative;
     bottom: 22px;
     left: 114px;
 }
 
-.label-numeros label{
+.label-numbers label{
     margin: 4px;
     font-size: 1.1em;
 }
 
 @media (min-width: 400px) {
-    .label-numeros{
+    .label-numbers{
         left: 119px;
     }
     
-    .label-numeros label{
+    .label-numbers label{
         font-size: 1.5em;
     }
 }
@@ -169,20 +169,20 @@ button:focus{
 }
 
 @media (min-width: 400px) {
-    .valor-actual{
+    .current-value{
         font-size: 2.7em;
     }
     
-    #valor-anterior{
+    #previous-value{
         font-size: 3em;
     }
 }
 
-.valor-actual{
+.current-value{
     font-size: 2.3em;
 }
 
-#valor-anterior{
+#previous-value{
     font-size: 2.5em;
 }
 
